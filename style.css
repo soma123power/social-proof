@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+}
+body{
+    background-color: rgb(15, 2, 35);
+   
+   
+   
+}
+
+.box{
+    position: relative;
+    width: 800px;
+   height: 380px;
+    border: 1px solid transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  transform: translate(-50% , -50%);
+  border-radius: 10px;
+  box-shadow:  4px 6px 2px #0c021b;
+  background-color: rgb(30, 8, 63);
+    
+}
+ .imgs{
+    position: absolute;
+    top: 0;
+    left: 60%;
+    width: 320px;
+    height:380px ;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, rgba(174,90,182,0.6) , rgba(174,90,182,0.6) ),url(imgs/image-header-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.text{
+    position: absolute;
+    left: 0%;
+    width: 480px;
+    height: 360px;
+    color: blueviolet;
+    margin-left: 60px;
+}
+.text .title{
+    margin-top: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: rgb(251, 247, 247);
+}
+.text span{
+    color: rgb(236, 89, 236);
+    margin-left: 5px
+}
+.text p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: gray;
+    margin-right: 75px;
+}
+.text .number{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+    margin-right: 135px;
+}
+.text .number .box1 h2,.box2 h2,.box3 h2{
+    color: #fff;
+}
+.text .number .box1,.box2 ,.box3 {
+text-align: center;
+color: gray;
+}
+footer{
+    top: 100%;
+}
+
+
+
+
+
+
+
+
+    
+@media (min-width: 200px) and (max-width:1300px){
+    body{
+        width: 100%;
+        min-height:100vh ;
+    }
+    .box{
+        
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        width: 340px;
+        height: 900px;
+    }
+    .box .imgs{
+        top:0%;
+        margin-left:-60%;
+        width: 340px;
+        height: 300px;
+    }
+    .text{
+        top: 40%;
+        width: 300px;
+    height: 300px;
+    margin-left: 30px;
+    }
+    .text .number{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       align-content: center;
+       margin-left: 90px;
+    }
+    footer{
+        top: 100%;
+    }
+}
